@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budgeting App</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Budgeting-App</h1>
+    <div id="input-section">
+    <label for="category">category</label>
+    <select id="category">
+        <option></option>
+        <option value="food">Food</option>
+        <option value="rent">Rent</option>
+        <option value="shopping">Shopping</option>
+        <option value="grocery">Grocery</option>
+    </select>
+    <label for="Amount">Amount</label>
+    <input type="Number" id="amount">
+    <label for="date">Date</label>
+    <input type="date" id="date">
+    <button id="add-btn">Add</button>
+</div>
+<div class="expense">
+    <h2>Expense</h2>
+    <table>
+        <thead>
+            <tr  id="table-head">
+                <td>category</td>
+                <td>Amount</td>
+                <td>DAte</td>
+                <td>Delete</td>
+            </tr>
+        </thead>
+        <tbody id="table-body">
+
+        </tbody>
+        <tfoot>
+            <tr>
+            <td>Total</td>
+            <td id="total"></td>
+            <td></td>
+            <td></td>
+        </tr>
+        </tfoot>
+    </table>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
