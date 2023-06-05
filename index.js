@@ -20,7 +20,7 @@ add.addEventListener("click", function(){
         alert("please select a date");
         return;
     }
-expenses.push({category,amount,date});
+expenses.push(category,amount,date);
 totalAmount += amount;
 totalAmountCell.textContent = totalAmount;
 
@@ -29,9 +29,9 @@ const categoryCell = newRow.insertCell();
 const amountCell = newRow.insertCell();
 const dateCell = newRow.insertCell();
 const deleteCell = newRow.insertCell();
-const deletebtn = document.createElement("button");
+const deletebtn = document.createElement(button);
 deletebtn.textContent = "Delete";
-deletebtn.classList.add("delete-btn");
+deletebtn.classList.add("delete");
 deletebtn.addEventListener("click",function(){
     expenses.splice(expenses.indexOf(expense),1)
     totalAmount -= expense.amount;
@@ -54,9 +54,9 @@ const categoryCell = newRow.insertCell();
 const amountCell = newRow.insertCell();
 const dateCell = newRow.insertCell();
 const deleteCell = newRow.insertCell();
-const deletebtn = document.createElement("button");
+const deletebtn = document.createElement(button);
 deletebtn.textContent = "Delete";
-deletebtn.classList.add("delete-btn")
+deletebtn.classList.add("delete")
 deletebtn.addEventListener("click",function(){
     expenses.splice(expenses.indexOf(expense),1)
     totalAmount -= expense.amount;
